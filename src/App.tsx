@@ -94,3 +94,12 @@ export default function App() {
     }
     window.open(mapsUrl, "_blank");
   };
+
+  return (
+    <div style={{ minHeight: "100vh", background: "#0f172a", color: "#fff", padding: "2rem", textAlign: "center" }}>
+      <h1>HÔM NAY ĂN GÌ?</h1>
+      <button onClick={handleSpin} disabled={spinning}>QUAY MÓN ĂN</button>
+      {result && <div><h2>{result.emoji} {result.name}</h2><button onClick={() => openGoogleMapsSearch(result)}>TÌM QUÁN TRÊN 4 SAO</button></div>}
+    </div>
+  );
+}
