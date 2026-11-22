@@ -6,7 +6,7 @@
   "homepage": "https://123okmen.github.io/food-gacha-app/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "node node_modules/.bin/tsc -b && node node_modules/.bin/vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
